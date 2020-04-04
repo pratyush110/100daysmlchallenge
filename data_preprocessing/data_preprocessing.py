@@ -16,7 +16,6 @@ missingvalues = SimpleImputer(missing_values = np.nan, strategy = 'mean', verbos
 missingvalues = missingvalues.fit(X[:, 1:3])
 X[:, 1:3]=missingvalues.transform(X[:, 1:3])
 
-
 # Encoding categorical data
 # Encoding the Independent Variable
 from sklearn.preprocessing import OneHotEncoder
